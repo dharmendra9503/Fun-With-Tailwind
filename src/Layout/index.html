@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <title>Layout</title>
+</head>
+
+<body>
+    <!-- Equal elements -->
+    <div class="grid gap-4 m-4 sm:grid-cols-2 grid-cols-2">
+        <div class="rounded min-h-[100px] bg-gray-400 shadow-xl"></div>
+        <div class="rounded min-h-[100px] bg-gray-400 shadow-xl"></div>
+    </div>
+
+    <div class="grid gap-4 m-4 sm:grid-cols-3">
+        <div class="rounded min-h-[100px] bg-gray-300 shadow-xl"></div>
+        <div class="rounded min-h-[100px] bg-gray-300 shadow-xl"></div>
+        <div class="rounded min-h-[100px] bg-gray-300 shadow-xl"></div>
+    </div>
+
+    <p class="text-center border border-co m-4 bg-blue-300 p-2">Non-equal elements</p>
+
+    <!-- Non equal elements -->
+    <div class="grid gap-4 m-4 sm:grid-cols-12">
+        <div class="rounded min-h-[100px] bg-gray-300 shadow-xl col-span-2 sm:block hidden"></div>
+        <div class="rounded min-h-[100px] bg-gray-300 shadow-xl col-span-8"></div>
+        <div class="rounded min-h-[100px] bg-gray-300 shadow-xl col-span-2 sm:block hidden"></div>
+    </div>
+</body>
+
+</html>
